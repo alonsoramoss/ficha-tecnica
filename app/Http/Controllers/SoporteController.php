@@ -70,7 +70,7 @@ class SoporteController extends Controller
 
         $nombrePDF = 'ficha_tecnica_' . $registro->id . '_' . now()->format('Ymd_His') . '.pdf';
 
-        $pdf = app(PDF::class)->loadView('pdf.soporte', ['data' => $registro]);
+        $pdf = app(PDF::class)->loadView('pdf.soporte_pdf', ['data' => $registro]);
 
         return $pdf->download($nombrePDF);
     }
