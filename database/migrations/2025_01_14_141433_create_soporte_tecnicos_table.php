@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mantenimiento_soporte_tecnico', function (Blueprint $table) {
+        Schema::create('soporte_tecnico', function (Blueprint $table) {
             $table->id();
+            $table->string('nomFicha');
             $table->string('unidOrganica');
             $table->date('fecha');
             $table->string('encargado');
@@ -20,14 +21,16 @@ return new class extends Migration
             $table->integer('dni');
             $table->string('modalidadLab');
             $table->string('nomTecnico');
-            $table->string('hardware')->nullable();
-            $table->string('sistemas')->nullable();
-            $table->string('software')->nullable();
-            $table->string('redes')->nullable();
+            $table->json('hardware')->nullable();
+            $table->json('hardware_text')->nullable();
+            $table->json('sistemas')->nullable();
+            $table->json('sistemas_text')->nullable();
+            $table->json('software')->nullable();
+            $table->json('software_text')->nullable();
+            $table->json('redes')->nullable();
+            $table->json('redes_text')->nullable();
             $table->text('observacion');
-            $table->timestamps();
         });
-        
     }
 
     /**
@@ -35,6 +38,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mantenimiento_soporte_tecnicos');
+        Schema::dropIfExists('soporte_tecnico');
     }
 };
