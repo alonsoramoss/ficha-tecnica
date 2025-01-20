@@ -1,0 +1,13 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::selection {
+  color: #000;
+  background-color: #67c2ff
+}
+
+*::-moz-selection {
+  color: #000;
+  background-color: #67c2ff
+}
