@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="encargado" class="form-label fw-semibold">ENCARGADO O RESPONSABLE (TRABAJADOR MUNICIPAL)</label>
+                <label for="encargado" class="form-label fw-semibold">ENCARGADO O RESPONSABLE</label>
                 <input type="text" class="form-control" id="encargado" name="encargado" required>
             </div>
             <div class="row mb-3">
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="nomTecnico" class="form-label fw-semibold">NOMBRE DEL TÉCNICO (UNIDAD DE SISTEMAS)</label>
+                <label for="nomTecnico" class="form-label fw-semibold">NOMBRE DEL TÉCNICO</label>
                 <input type="text" class="form-control" id="nomTecnico" name="nomTecnico" required>
             </div>
 
