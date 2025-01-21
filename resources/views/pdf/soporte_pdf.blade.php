@@ -69,6 +69,7 @@
             padding: 5px;
             border: 1px solid #ddd;
             text-align: left;
+            font-size: 14px;
         }
 
         table th {
@@ -82,13 +83,16 @@
         }
 
         .firma {
+            width: 100%;
             border-collapse: collapse;
             margin: 0;
         }
 
         .firma td {
+            width: 33.33%;
             border: none;
-            padding: 0 15px;
+            padding: 60px 10px;
+            vertical-align: center;
         }
 
         .firma p {
@@ -98,8 +102,7 @@
 
         .linea-firma {
             display: block;
-            margin-top: 30px;
-            margin-bottom: 1px;
+            margin-top: 30px auto 1px auto;
             border-top: 1px solid #000;
         }
     </style>
