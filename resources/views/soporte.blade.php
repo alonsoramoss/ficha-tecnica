@@ -8,8 +8,8 @@
         @csrf
             <div class="row mb-4">
                 <div class="col-12 col-md-4 d-flex justify-content-center">
-                    <img src="https://s3.amazonaws.com/documentos.api.gob.pe/nly7xd7anwwu30oi20ad6g49umzt?response-content-disposition=inline%3B%20filename%3D%22LOGO%20MPP%20JUNTOS%20HAREMOS%20HISTORIA.png%22%3B%20filename%2A%3DUTF-8%27%27LOGO%2520MPP%2520JUNTOS%2520HAREMOS%2520HISTORIA.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJREKOSPKMJFYJDAQ%2F20250114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250114T152252Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=60d74ad6455b4877c5a8194e38cb9bde96cae0ae58ded447c413f4a4c27c438d" 
-                    class="img-fluid" alt="MunicipalidadPisco">
+                    <img src="{{ url('img/muniPisco_logo.webp') }}"
+                    class="img-fluid" style="width: 19rem;" alt="MunicipalidadPisco">
                 </div>
                 <div class="col-12 col-md-8">
                     <label for="nomFicha" class="form-label fw-semibold">FICHA TÉCNICA</label>
