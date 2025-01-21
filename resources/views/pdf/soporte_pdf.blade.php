@@ -40,7 +40,7 @@
         }
 
         p {
-            font-size: 15px;
+            font-size: 14px;
         }
 
         .data-list2 {
@@ -219,7 +219,7 @@
             <tr>
                 <td>
                     <span class="linea-firma"></span>
-                    <p>Administrador de Redes y Comunicación</p>
+                    <p>Soporte Técnico</p>
                 </td>
                 <td>
                     <span class="linea-firma"></span>
