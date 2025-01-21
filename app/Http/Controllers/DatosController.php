@@ -10,6 +10,7 @@ class DatosController extends Controller
     public function index()
     {
         $datos = SoporteModel::all();
+        $datos = SoporteModel::orderBy('id', 'desc')->get();
         return view('datos.index', compact('datos'));
     }
 
