@@ -39,6 +39,10 @@
             margin: 15px 0;
         }
 
+        p {
+            font-size: 15px;
+        }
+
         .data-list2 {
             margin-top: 20px;
             margin-bottom: 20px;
@@ -112,11 +116,11 @@
             <h4>INFORMACIÓN GENERAL</h4>
             <p><strong>Unidad Orgánica:</strong> {{ $data->unidOrganica }}</p>
             <p><strong>Fecha:</strong> {{ $data->fecha }}</p>
-            <p><strong>Encargado o responsable (Trabajador Municipal):</strong> {{ $data->encargado }}</p>
+            <p><strong>Encargado o responsable:</strong> {{ $data->encargado }}</p>
             <p><strong>Cargo:</strong> {{ $data->cargo }}</p>
             <p><strong>DNI:</strong> {{ $data->dni }}</p>
             <p><strong>Modalidad Laboral:</strong> {{ $data->modalidadLab }}</p>
-            <p><strong>Nombre del Técnico (Unidad de Sistemas):</strong> {{ $data->nomTecnico }}</p>
+            <p><strong>Nombre del Técnico:</strong> {{ $data->nomTecnico }}</p>
         </div>
 
         <div class="data-list2">
