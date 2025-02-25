@@ -15,19 +15,13 @@ Sección: **Datos**
 
 ## Pasos para utilizar el sistema
 #### 1. Clonar el repositorio
-```sql
-git clone https://github.com/alonsoramoss/ficha-tecnica.git
-```  
+    git clone https://github.com/alonsoramoss/ficha-tecnica.git
 
 #### 2. Instalar las dependencias de Laravel
-```sql
-composer install
-```
+    composer install
 
 #### 3. Crea el archivo de configuración
-```sql
-composer install
-```
+    cp .env.example .env
 
 #### 4. Iniciar Apache y MySQL en XAMPP
 Abre el panel de control de XAMPP y activa los servicios de **Apache** y **MySQL**.
@@ -43,18 +37,12 @@ DB_PASSWORD=tu_contraseña
 ```
 
 #### 6. Genera la clave de la aplicación
-```sql
-php artisan key:generate
-```
+    php artisan key:generate
 
 #### 7. Ejecuta las migraciones para crear la base de datos
-```sql
-php artisan migrate
-```
+    php artisan migrate
 
 #### 8. Inicia el servidor de desarrollo
-```sql
-php artisan serve
-```
+    php artisan serve
 
 
