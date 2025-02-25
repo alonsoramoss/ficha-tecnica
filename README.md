@@ -15,11 +15,15 @@ Sección: **Datos**
 
 ## Pasos para utilizar el sistema
 #### 1. Clonar el repositorio
+```sql
+git clone https://github.com/alonsoramoss/ficha-tecnica.git
+```  
 
 #### 2. Instalar las dependencias de Laravel
 ```sql
 composer install
-```  
+```
+
 #### 3. Crea el archivo de configuración
 ```sql
 composer install
