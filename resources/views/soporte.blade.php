@@ -4,12 +4,12 @@
 
 @section('content')
     <div class="container">
-        <form class="p-5 border shadow-lg" action="{{ route('guardar') }}" method="POST" id="formFicha">
+        <form class="p-4 p-sm-5 border shadow-lg" action="{{ route('guardar') }}" method="POST" id="formFicha">
         @csrf
             <div class="row mb-4">
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <img src="{{ url('img/muniPisco_logo.webp') }}"
-                    class="img-fluid" style="width: 19rem;" alt="MunicipalidadPisco">
+                    class="img-fluid mb-4 mb-sm-5" style="width: 19rem;" alt="MunicipalidadPisco">
                 </div>
                 <div class="col-12 col-md-8">
                     <label for="nomFicha" class="form-label fw-semibold">FICHA TÉCNICA</label>
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <h5 class="fw-semibold mb-3">INFORMACIÓN GENERAL</h5>
+            <h5 class="fw-semibold mb-3 text-center text-sm-start">INFORMACIÓN GENERAL</h5>
             <div class="row mb-3">
                 <div class="col">
                     <label for="unidOrganica" class="form-label fw-semibold">UNIDAD ORGÁNICA</label>
@@ -88,8 +88,8 @@
                 <input type="text" class="form-control" id="nomTecnico" name="nomTecnico" required>
             </div>
 
-            <h5 class="fw-semibold mb-3">CONSTANCIA DE ATENCIÓN DEL SERVICIO DE SOPORTE TÉCNICO</h5>
-            <p>Consta por el presente, haber realizado el Servicio Técnico de lo siguiente:</p>
+            <h5 class="fw-semibold mb-3 text-center text-sm-start">CONSTANCIA DE ATENCIÓN DEL SERVICIO DE SOPORTE TÉCNICO</h5>
+            <p class="text-ficha">Consta por el presente, haber realizado el Servicio Técnico de lo siguiente:</p>
             <div class="row">
                 <div class="col-12 col-md-6 mb-3">
                     <label class="form-label fw-semibold">HARDWARE</label>
@@ -313,12 +313,12 @@
                     </div>
                 </div>
             </div>
-            <div class="mb-5">
+            <div class="mb-4 mb-sm-5">
                 <label for="observacion" class="form-label fw-semibold">OBSERVACIÓN</label>
                 <textarea class="form-control" id="observacion" name="observacion" rows="3" required></textarea>
             </div>
-            <div class="d-grid col-4 mx-auto">
-                <button type="submit" class="btn btn-primary btn-lg fw-bold">Guardar</button>
+            <div class="d-grid mx-auto col-8 col-md-6 col-lg-4">
+                <button type="submit" class="btn btn-primary btn-lg fw-semibold">Guardar</button>  
             </div>
         </form>
     </div>

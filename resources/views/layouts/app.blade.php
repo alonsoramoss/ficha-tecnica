@@ -10,18 +10,18 @@
 </head>
 <body>
     <nav class="navbar bg-body-tertiary border-bottom">
-        <div class="container-fluid mx-3">
+        <div class="container-fluid mx-0 mx-sm-3">
             <a class="navbar-brand" href="/">
                 <img src="{{ url('img/muniPisco_logo.webp') }}"
-                class="img-fluid" style="width: 13rem;" alt="MunicipalidadPisco">
+                class="img-navbar" alt="MunicipalidadPisco">
             </a>
-            <p class="mb-0">
+            <p class="mb-0 text-navbar">
                 <a class="fw-semibold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="fichaTecnica" href="{{ url('/') }}">FICHA TÉCNICA</a>
                 <a class="fw-semibold ms-3 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="datos" href="{{ url('/datos') }}">DATOS</a>
             </p>
         </div>
     </nav>
-    <div class="p-5">
+    <div class="p-3 p-sm-5">
         @yield('content')
     </div>
     @stack('scripts')

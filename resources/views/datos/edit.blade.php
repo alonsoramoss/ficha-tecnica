@@ -107,7 +107,7 @@
             <textarea class="form-control" id="observacion" name="observacion" rows="4" required>{{ old('observacion', $dato->observacion) }}</textarea>
         </div>
 
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-center justify-content-sm-end">
             <button type="submit" class="btn btn-success btn-lg me-2">Actualizar</button>
             <a class="btn btn-danger btn-lg" href="{{ url('/datos') }}">Cancelar</a>
         </div>

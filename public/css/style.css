@@ -11,3 +11,68 @@
   color: #000;
   background-color: #67c2ff
 }
+
+.img-navbar {
+  width: 100%;
+  max-width: 13rem;
+  height: auto;
+}
+
+.text-navbar {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+label {
+  font-size: 16px;
+}
+
+.text-ficha {
+  font-size: 16px;
+}
+
+.input-group-text {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .img-navbar {
+    max-width: 9rem;
+  }
+
+  .text-navbar {
+    font-size: 9px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .text-ficha {
+    font-size: 14px;
+  }
+
+  .input-group-text {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
