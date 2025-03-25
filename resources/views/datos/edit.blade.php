@@ -108,8 +108,8 @@
         </div>
 
         <div class="d-flex justify-content-center justify-content-sm-end">
-            <button type="submit" class="btn btn-success btn-lg me-2">Actualizar</button>
-            <a class="btn btn-danger btn-lg" href="{{ url('/datos') }}">Cancelar</a>
+            <button type="submit" class="btn btn-success btn-md me-2">Actualizar</button>
+            <a class="btn btn-danger btn-md" href="{{ url('/datos') }}">Cancelar</a>
         </div>
     </form>
 </div>

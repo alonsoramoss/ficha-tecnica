@@ -10,14 +10,12 @@
             {{ session('success') }}
         </div>
     @endif
-    <div class="row mb-3 mt-1">
-        <div>
-            <form method="POST">
-                <div class="form-group">
-                    <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
-                </div>
-            </form>
-        </div>
+    <div>
+        <form method="POST">
+            <div class="form-group">
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
+            </div>
+        </form>
     </div>
     <div class="table-container">
         <table class="table table-bordered mt-3 align-middle" id="tabla-datos">
@@ -50,10 +48,10 @@
                         <td>{{ $dato->id }}</td>
                         <td>{{ $dato->nomFicha }}</td>
                         <td>{{ $dato->unidOrganica }}</td>
-                        <td>{{ $dato->fecha }}</td>
+                        <td class="text-center" style="min-width: 100px">{{ $dato->fecha }}</td>
                         <td>{{ $dato->encargado }}</td>
                         <td>{{ $dato->cargo }}</td>
-                        <td>{{ $dato->dni }}</td>
+                        <td class="text-center">{{ $dato->dni }}</td>
                         <td>{{ $dato->modalidadLab }}</td>
                         <td>{{ $dato->nomTecnico }}</td>
                         <td>{{ is_array($dato->hardware) ? implode(', ', $dato->hardware) : $dato->hardware }}</td>
