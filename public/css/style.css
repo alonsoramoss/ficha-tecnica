@@ -18,7 +18,7 @@
   height: auto;
 }
 
-.text-navbar {
+.text-navbar, label, .text-ficha, .input-group-text {
   font-size: 16px;
 }
 
@@ -26,20 +26,12 @@ h5 {
   font-size: 20px;
 }
 
-label {
-  font-size: 16px;
-}
-
-.text-ficha {
-  font-size: 16px;
-}
-
-.input-group-text {
-  font-size: 16px;
-}
-
 h3 {
   font-size: 24px;
+}
+
+th, td {
+  font-size: 14px;
 }
 
 @media (max-width: 576px) {
@@ -47,29 +39,22 @@ h3 {
     max-width: 9rem;
   }
 
-  .text-navbar {
-    font-size: 9px;
+  .text-navbar, td {
+    font-size: 12px;
   }
 
   h5 {
     font-size: 16px;
   }
 
-  label {
-    font-size: 14px;
-  }
-
-  .text-ficha {
-    font-size: 14px;
-  }
-
-  .input-group-text {
+  label, .text-ficha, .input-group-text {
     font-size: 14px;
   }
 
   h3 {
     font-size: 20px;
   }
+
 }
 
 .table-container {
