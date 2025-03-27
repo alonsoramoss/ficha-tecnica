@@ -17,10 +17,12 @@ Sección: **Datos**
 #### 1. Clonar el repositorio
     git clone https://github.com/alonsoramoss/ficha-tecnica.git
 
-#### 2. Instalar las dependencias de Laravel
+#### 2. Instalar dependencias
     composer install
 
 #### 3. Crea el archivo de configuración
+Copia el archivo .env.example a .env:
+
     cp .env.example .env
 
 #### 4. Iniciar Apache y MySQL en XAMPP
@@ -39,8 +41,9 @@ DB_PASSWORD=tu_contraseña
 #### 6. Genera la clave de la aplicación
     php artisan key:generate
 
-#### 7. Ejecuta las migraciones para crear la base de datos
-    php artisan migrate
+#### 7. Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
+    php artisan migrate    
+Si la base de datos `citytours` no existe en MySQL, también se creará.
 
 #### 8. Inicia el servidor de desarrollo
     php artisan serve
