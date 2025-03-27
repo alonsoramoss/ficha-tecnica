@@ -20,7 +20,7 @@ Sección: **Datos**
 #### 2. Instalar dependencias
     composer install
 
-#### 3. Crea el archivo de configuración
+#### 3. Crear el archivo de configuración
 Copia el archivo .env.example a .env:
 
     cp .env.example .env
@@ -28,7 +28,7 @@ Copia el archivo .env.example a .env:
 #### 4. Iniciar Apache y MySQL en XAMPP
 Abre el panel de control de XAMPP y activa los servicios de **Apache** y **MySQL**.
 
-#### 5. Configura el archivo `.env` con los datos de conexión a MySQL
+#### 5. Configurar el archivo `.env` con los datos de conexión a MySQL
 ```sql
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -38,14 +38,14 @@ DB_USERNAME=tu_usuario
 DB_PASSWORD=tu_contraseña
 ```
 
-#### 6. Genera la clave de la aplicación
+#### 6. Generar la clave de la aplicación
     php artisan key:generate
 
-#### 7. Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
+#### 7. Migrar las tablas a la base de datos
+Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
+
     php artisan migrate    
 Si la base de datos `citytours` no existe en MySQL, también se creará.
 
-#### 8. Inicia el servidor de desarrollo
+#### 8. Iniciar el servidor de desarrollo
     php artisan serve
-
-
