@@ -1,10 +1,10 @@
-# Sistema de Gestión de Fichas Técnicas
+# Automatización para el Registro de Fichas Técnicas en el Área de Soporte Técnico de la Municipalidad Provincial de Pisco
 
-Sistema web desarrollado en Laravel con MySQL, diseñado para optimizar el registro y gestión de fichas técnicas en el área de soporte técnico. Permite a los usuarios registrar información detallada sobre cada caso, almacenarla en la base de datos y generar un archivo PDF con los datos ingresados. Además, incluye una sección donde se pueden visualizar, buscar y editar los registros de manera eficiente a través de una interfaz intuitiva.
+Sistema web desarrollado para optimizar el registro y gestión de fichas técnicas en el área de soporte técnico de la Municipalidad Provincial de Pisco. Permite a los técnicos registrar información detallada sobre cada caso, almacenarla en la base de datos y generar automáticamente un archivo PDF con los datos ingresados. Además, incluye una interfaz intuitiva que facilita la visualización, búsqueda y edición de los registros de manera eficiente.
 
 ## Funcionalidades
 Sección: **Ficha Técnica**
-- Registro de nuevas fichas técnicas para el área de soporte técnico..
+- Registro de nuevas fichas técnicas para el área de soporte técnico.
 - Almacenamiento de los datos en la base de datos MySQL.
 - Generación automática de un archivo PDF con los información registrada.
 
