@@ -46,7 +46,7 @@ DB_PASSWORD=tu_contraseña
 Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
 
     php artisan migrate    
-Si la base de datos `citytours` no existe en MySQL, también se creará.
+Si la base de datos `soporte` no existe en MySQL, también se creará.
 
 #### 8. Inicia el servidor de desarrollo
     php artisan serve
