@@ -7,13 +7,55 @@ use Illuminate\Http\Request;
 
 class DatosController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $datos = SoporteModel::all();
-        $datos = SoporteModel::orderBy('id', 'desc')->get();
+        $datos = SoporteModel::orderBy('id', 'desc')->paginate(10);
+    
+        if ($request->ajax()) {
+            return response()->json([
+                'html' => view('datos.table-body', compact('datos'))->render(),
+                'links' => $datos->links()->toHtml(),
+            ]);
+        }
+    
         return view('datos.index', compact('datos'));
     }
-
+    
+    public function buscar(Request $request)
+    {
+        $buscar = $request->get('buscar');
+        
+        $datos = SoporteModel::orderBy('id', 'desc')
+            ->when($buscar, function ($query, $buscar) {
+                return $query->where(function ($query) use ($buscar) {
+                    $query->where('id', 'like', "%$buscar%")
+                        ->orWhere('nomFicha', 'like', "%$buscar%")
+                        ->orWhere('unidOrganica', 'like', "%$buscar%")
+                        ->orWhere('fecha', 'like', "%$buscar%")
+                        ->orWhere('encargado', 'like', "%$buscar%")
+                        ->orWhere('cargo', 'like', "%$buscar%")
+                        ->orWhere('dni', 'like', "%$buscar%")
+                        ->orWhere('modalidadLab', 'like', "%$buscar%")
+                        ->orWhere('nomTecnico', 'like', "%$buscar%")
+                        ->orwhereRaw('LOWER(hardware) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(hardware_text) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(sistemas) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(sistemas_text) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(software) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(software_text) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(redes) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhereRaw('LOWER(redes_text) LIKE ?', ['%' . strtolower($buscar) . '%'])
+                        ->orWhere('observacion', 'like', "%$buscar%");
+                });
+            })
+            ->paginate(10);
+    
+        return response()->json([
+            'html' => view('datos.table-body', compact('datos'))->render(),
+            'links' => $datos->links()->toHtml(),
+        ]);
+    }
+    
     public function edit($id)
     {
         $dato = SoporteModel::findOrFail($id);
