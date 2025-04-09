@@ -2,6 +2,8 @@
 
 Sistema web desarrollado para optimizar el registro y gestión de fichas técnicas en el área de soporte técnico de la Municipalidad Provincial de Pisco. Permite a los técnicos registrar información detallada sobre cada caso, almacenarla en la base de datos y generar automáticamente un archivo PDF con los datos ingresados. Además, incluye una interfaz intuitiva que facilita la visualización, búsqueda y edición de los registros de manera eficiente.
 
+![fichatecnica_github](https://github.com/user-attachments/assets/5c2a3b4b-1ec0-4b06-adf9-b2785d012f06)
+
 ## Funcionalidades
 Sección: **Ficha Técnica**
 - Registro de nuevas fichas técnicas para el área de soporte técnico.
