@@ -10,13 +10,12 @@
             {{ session('success') }}
         </div>
     @endif
-    <div>
-        <form method="POST">
-            <div class="form-group">
-                <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
-            </div>
-        </form>
-    </div>
+    <form id="form-buscar">
+        <div class="form-group">
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
+        </div>
+    </form>
+    
     <div class="table-container">
         <table class="table table-bordered mt-3 align-middle" id="tabla-datos">
             <thead class="table-dark text-center align-middle">
@@ -71,37 +70,12 @@
             </tbody>
         </table>
     </div>
+    <div class="d-flex justify-content-center mt-3">
+        {{ $datos->links() }}
+    </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const successMessage = document.getElementById('alerta-datos');
-        if (successMessage) {
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-            }, 3000);
-        }
-
-        const searchInput = document.getElementById('buscar');
-        searchInput.addEventListener('keyup', function() {
-            const filtro = searchInput.value.toLowerCase();
-            const filas = document.querySelectorAll('#tabla-datos tbody tr');
-
-            filas.forEach(fila => {
-                let coincidencia = false;
-                fila.querySelectorAll('td').forEach(celda => {
-                    if (celda.textContent.toLowerCase().includes(filtro)) {
-                        coincidencia = true;
-                    }
-                });
-
-                if (coincidencia) {
-                    fila.style.display = '';
-                } else {
-                    fila.style.display = 'none';
-                }
-            });
-        });
-    });
-</script>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/tabla.js')}}" defer></script>
+@endpush
