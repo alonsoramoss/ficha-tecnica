@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@yield('title', 'Ficha Técnica' )</title>
-        <meta name="description" content="Sistema web para el registro y gestión de fichas técnicas en el área de soporte técnico de la Municipalidad Provincial de Pisco.">
+        <meta name="description" content="Sistema web para registrar y gestionar fichas técnicas del área de soporte técnico de la Municipalidad Provincial de Pisco.">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
