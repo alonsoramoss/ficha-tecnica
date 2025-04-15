@@ -17,7 +17,7 @@
     </form>
     
     <div class="table-container">
-        <table class="table table-bordered mt-3 align-middle" id="tabla-datos">
+        <table class="table table-bordered table-hover mt-3 align-middle" id="tabla-datos">
             <thead class="table-dark text-center align-middle">
                 <tr>
                     <th>#</th>
