@@ -2,9 +2,16 @@
 
 Sistema web desarrollado para optimizar el registro y gestión de fichas técnicas en el área de soporte técnico de la Municipalidad Provincial de Pisco. Permite a los técnicos registrar información detallada sobre cada caso, almacenarla en la base de datos y generar automáticamente un archivo PDF con los datos ingresados. Además, incluye una interfaz intuitiva que facilita la visualización, búsqueda y edición de los registros de manera eficiente.
 
-![fichatecnica_github](https://github.com/user-attachments/assets/5c2a3b4b-1ec0-4b06-adf9-b2785d012f06)
+![fichatecnica_github](https://github.com/user-attachments/assets/2cc7b9d5-103b-4dc9-8360-86877d99274f)
 
-## Funcionalidades
+## 🛠️ Tecnologías
+- ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+- ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+- ![XAMPP](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+## 📋 Funcionalidades
 Sección: **Ficha Técnica**
 - Registro de nuevas fichas técnicas para el área de soporte técnico.
 - Almacenamiento de los datos en la base de datos MySQL.
@@ -15,8 +22,7 @@ Sección: **Datos**
 - Búsqueda filtrada para encontrar registros específicos.
 - Cada fila incluye un botón *Editar* que permite modificar los datos del registro correspondiente.
 
-## Instalación y Configuración
-
+## ⚙️ Instalación y Configuración
 #### 1. Clona el repositorio
     git clone https://github.com/alonsoramoss/ficha-tecnica.git
 
