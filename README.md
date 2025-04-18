@@ -13,14 +13,14 @@ Sistema web desarrollado para optimizar el registro y gestión de fichas técnic
 
 ## 📋 Funcionalidades
 Sección: **Ficha Técnica**
-- Registro de nuevas fichas técnicas para el área de soporte técnico.
-- Almacenamiento de los datos en la base de datos MySQL.
-- Generación automática de un archivo PDF con los información registrada.
+- Registro de nuevas fichas técnicas.
+- Almacenamiento automático de la información en la base de datos.
+- Generación automática de un archivo PDF con los datos registrados.
 
 Sección: **Datos**
-- Muestra una tabla con todas las fichas técnicas registradas.
+- Visualización de todas las fichas técnicas en una tabla dinámica.
 - Búsqueda filtrada para encontrar registros específicos.
-- Cada fila incluye un botón *Editar* que permite modificar los datos del registro correspondiente.
+- Edición de registros mediante un botón Editar en cada fila.
 
 ## ⚙️ Instalación y Configuración
 #### 1. Clona el repositorio
