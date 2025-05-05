@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var dniField = document.getElementById("dni");
+    var campoDni = document.getElementById("dni");
 
-    dniField.addEventListener("input", function() {
-        var dni = dniField.value;
+    campoDni.addEventListener("input", function() {
+        var dni = campoDni.value;
         if (dni.length !== 8) {
-            dniField.setCustomValidity("El DNI debe tener exactamente 8 dígitos.");
+            campoDni.setCustomValidity("El DNI debe tener exactamente 8 dígitos.");
         } else {
-            dniField.setCustomValidity("");
+            campoDni.setCustomValidity("");
         }
     });
 
     var form = document.getElementById("formFicha");
     form.addEventListener("submit", function(event) {
-        if (!dniField.validity.valid) {
+        if (!campoDni.validity.valid) {
             event.preventDefault();
         }
     });
