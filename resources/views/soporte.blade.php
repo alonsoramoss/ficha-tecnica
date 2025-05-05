@@ -8,8 +8,8 @@
         @csrf
             <div class="row mb-4">
                 <div class="col-12 col-md-4 d-flex justify-content-center">
-                    <img src="{{ url('img/muniPisco_logo.webp') }}"
-                    class="img-fluid mb-4 mb-sm-5" style="width: 19rem;" alt="MunicipalidadPisco">
+                    <img src="{{ asset('img/munipisco.png') }}"
+                    class="img-fluid mb-4 mb-sm-5" style="width: 19rem;" alt="Municipalidad de Pisco">
                 </div>
                 <div class="col-12 col-md-8">
                     <label for="nomFicha" class="form-label fw-semibold">FICHA TÉCNICA</label>
@@ -94,118 +94,117 @@
                 <div class="col-12 col-md-6 mb-3">
                     <label class="form-label fw-semibold">HARDWARE</label>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            CPU y/o Laptop
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">CPU y/o Laptop</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_cpu" value="CPU y/o Laptop">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_cpu" name="hardware_text[CPU y/o Laptop]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Monitor
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Monitor</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_monitor" value="Monitor">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_monitor" name="hardware_text[Monitor]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Teclado
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Teclado</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_teclado" value="Teclado">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_teclado" name="hardware_text[Teclado]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Mouse
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Mouse</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="mouse" value="Mouse">
                         </div>
                         <input type="text" class="form-control" id="mouse" name="hardware_text[Mouse]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Estabilizador
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Estabilizador</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_estabilizador" value="Estabilizador">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_estabilizador" name="hardware_text[Estabilizador]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Impresora
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Impresora</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_impresora" value="Impresora">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_impresora" name="hardware_text[Impresora]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Supresor de Pico
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Supresor de Pico</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_supresor_pico" value="Supresor de Pico">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_supresor_pico" name="hardware_text[Supresor de Pico]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Otros
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Otros</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="hardware[]" id="hardware_otros" value="Otros">
                         </div>
                         <input type="text" class="form-control" id="hardware_text_otros" name="hardware_text[Otros]" disabled>
                     </div>
                 </div>
 
-                
                 <div id="sistemas" name="sistemas" class="col mb-3">
                     <label for="sistemas" class="form-label fw-semibold">SISTEMAS Y/O APLICATIVOS</label>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            SIAF
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">SIAF</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_siaf" value="SIAF">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_siaf" name="sistemas_text[SIAF]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            SIGA
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">SIGA</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_siga" value="SIGA">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_siga" name="sistemas_text[SIGA]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Sistema Registro Civil
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Sistema Registro Civil</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_registro_civil" value="Sistema Registro Civil">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_registro_civil" name="sistemas_text[Sistema Registro Civil]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            RUBEM
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">RUBEM</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_rubem" value="RUBEM">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_rubem" name="sistemas_text[RUBEM]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            RUB PVL 20
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">RUB PVL 20</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_rub_pvl_20" value="RUB PVL 20">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_rub_pvl_20" name="sistemas_text[RUB PVL 20]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            SISPLA
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">SISPLA</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_sispla" value="SISPLA">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_sispla" name="sistemas_text[SISPLA]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Supresor Vía Web
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Supresor Vía Web</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_supresor_via_web" value="Supresor Via Web">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_supresor_via_web" name="sistemas_text[Supresor Via Web]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Otros
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Otros</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="sistemas[]" id="sistemas_otros" value="Otros">
                         </div>
                         <input type="text" class="form-control" id="sistemas_text_otros" name="sistemas_text[Otros]" disabled>
@@ -217,50 +216,50 @@
                 <div id="software" name="software" class="col">
                     <label for="software" class="form-label fw-semibold">SOFTWARE</label>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Sistema Operativo
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Sistema Operativo</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_sistema_operativo" value="Sistema Operativo">
                         </div>
                         <input type="text" class="form-control" id="software_text_sistema_operativo" name="software_text[Sistema Operativo]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Word
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Word</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_word" value="Word">
                         </div>
                         <input type="text" class="form-control" id="software_text_word" name="software_text[Word]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Excel
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Excel</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_excel" value="Excel">
                         </div>
                         <input type="text" class="form-control" id="software_text_excel" name="software_text[Excel]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Power Point
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Power Point</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_power_point" value="Power Point">
                         </div>
                         <input type="text" class="form-control" id="software_text_power_point" name="software_text[Power Point]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Internet
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Internet</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_internet" value="Internet">
                         </div>
                         <input type="text" class="form-control" id="software_text_internet" name="software_text[Internet]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Antivirus
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Antivirus</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_antivirus" value="Antivirus">
                         </div>
                         <input type="text" class="form-control" id="software_text_antivirus" name="software_text[Antivirus]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Otros
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Otros</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="software[]" id="software_otros" value="Otros">
                         </div>
                         <input type="text" class="form-control" id="software_text_otros" name="software_text[Otros]" disabled>
@@ -270,43 +269,43 @@
                 <div id="redes" name="redes" class="col">
                     <label for="redes" class="form-label fw-semibold">REDES</label>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Internet
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Internet</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="redes[]" id="redes_internet" value="Internet">
                         </div>
                         <input type="text" class="form-control" id="redes_text_internet" name="redes_text[Internet]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Modem
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Modem</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="redes[]" id="redes_modem" value="Modem">
                         </div>
                         <input type="text" class="form-control" id="redes_text_modem" name="redes_text[Modem]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Router
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Router</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="redes[]" id="redes_router" value="Router">
                         </div>
                         <input type="text" class="form-control" id="redes_text_router" name="redes_text[Router]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Switch
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Switch</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="redes[]" id="redes_switch" value="Switch">
                         </div>
                         <input type="text" class="form-control" id="redes_text_switch" name="redes_text[Switch]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Cableado
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Cableado</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="redes[]" id="redes_cableado" value="Cableado">
                         </div>
                         <input type="text" class="form-control" id="redes_text_cableado" name="redes_text[Cableado]" disabled>
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            Otros
+                        <div class="input-group-text d-flex align-items-center justify-content-between w-50">
+                            <span class="text-truncate">Otros</span>
                             <input class="form-check-input mt-0 ms-2" type="checkbox" name="redes[]" id="redes_otros" value="Otros">
                         </div>
                         <input type="text" class="form-control" id="redes_text_otros" name="redes_text[Otros]" disabled>
