@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ficha Técnica</title>
-        <meta name="description" content="Sistema web para registrar y gestionar fichas técnicas del área de soporte técnico de la Municipalidad Provincial de Pisco.">
+        <meta name="description" content="Sistema para automatizar y optimizar el registro, generación y gestión de fichas técnicas en el área de soporte técnico de la Municipalidad Provincial de Pisco.">
         <style>
             .container {
                 font-family: Arial, Helvetica, sans-serif;

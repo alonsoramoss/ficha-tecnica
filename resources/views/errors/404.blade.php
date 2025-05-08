@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página no encontrada - 404</title>
-        <meta name="description" content="Sistema web para registrar y gestionar fichas técnicas del área de soporte técnico de la Municipalidad Provincial de Pisco.">
+        <meta name="description" content="Sistema para automatizar y optimizar el registro, generación y gestión de fichas técnicas en el área de soporte técnico de la Municipalidad Provincial de Pisco.">
         <link rel="preload" href="/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/404.css') }}">
