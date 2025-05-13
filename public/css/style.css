@@ -42,6 +42,10 @@
   }
 }
 
+img { 
+  pointer-events: none;
+}
+
 .img-navbar {
   width: 100%;
   max-width: 13rem;
