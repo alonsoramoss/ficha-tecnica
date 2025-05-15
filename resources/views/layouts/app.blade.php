@@ -16,12 +16,12 @@
                     <img src="{{ asset('img/municipalidad-pisco.png') }}"
                     class="img-navbar" alt="Municipalidad de Pisco">
                 </a>
-                <ul class="nav">
+                <ul class="nav gap-3 gap-sm-4">
                     <li class="nav-item">
-                        <a href="{{ url('/') }}" class="fw-semibold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-label="Ir a Ficha Técnica">FICHA TÉCNICA</a>
+                        <a href="{{ url('/') }}" class="text-navbar fw-semibold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-label="Ir a Ficha Técnica">FICHA TÉCNICA</a>
                     </li>
-                    <li class="nav-item ms-4">
-                        <a href="{{ url('/datos') }}" class="fw-semibold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-label="Ir a Datos">DATOS</a>
+                    <li class="nav-item">
+                        <a href="{{ url('/datos') }}" class="text-navbar fw-semibold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-label="Ir a Datos">DATOS</a>
                     </li>    
                 </ul>
             </div>
