@@ -112,7 +112,7 @@
     <body>
         <div class="container">
             <div class="header">
-                <img src="{{ public_path('img/escudopisco.png') }}" alt="Escudo de Pisco">
+                <img src="{{ public_path('img/escudo-pisco.png') }}" alt="Escudo de Pisco">
                 <h3 class="title"> {{ $data->nomFicha }}</h3>
             </div>
 

@@ -8,7 +8,7 @@
         @csrf
             <div class="row mb-4">
                 <div class="col-12 col-md-4 d-flex justify-content-center">
-                    <img src="{{ asset('img/munipisco.png') }}"
+                    <img src="{{ asset('img/municipalidad-pisco.png') }}"
                     class="img-fluid mb-4 mb-sm-5" style="width: 19rem;" alt="Municipalidad de Pisco">
                 </div>
                 <div class="col-12 col-md-8">

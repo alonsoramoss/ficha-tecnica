@@ -13,7 +13,7 @@
         <nav class="navbar bg-body-tertiary border-bottom">
             <div class="container-fluid mx-0 mx-sm-3">
                 <a class="navbar-brand" href="/">
-                    <img src="{{ asset('img/munipisco.png') }}"
+                    <img src="{{ asset('img/municipalidad-pisco.png') }}"
                     class="img-navbar" alt="Municipalidad de Pisco">
                 </a>
                 <ul class="nav">
