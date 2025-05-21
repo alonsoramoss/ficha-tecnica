@@ -53,19 +53,19 @@ img {
 }
 
 .text-navbar, label, .text-ficha, .input-group-text {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 th, td {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 576px) {
@@ -74,19 +74,19 @@ th, td {
   }
 
   .text-navbar, td {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   h5 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   label, .text-ficha, .input-group-text {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
 }

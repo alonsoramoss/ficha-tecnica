@@ -41,7 +41,7 @@
             }
 
             p {
-                font-size: 14px;
+                font-size: 0.875rem;
             }
 
             .data-list2 {
@@ -70,7 +70,7 @@
                 padding: 5px;
                 border: 1px solid #ddd;
                 text-align: left;
-                font-size: 14px;
+                font-size: 0.875rem;
             }
 
             table th {
