@@ -27,18 +27,21 @@ Sección: **Datos**
 #### 1. Clona el repositorio
     git clone https://github.com/alonsoramoss/ficha-tecnica.git
 
-#### 2. Instala dependencias
+#### 2. Entra al directorio del proyecto
+    cd ficha-tecnica
+
+#### 3. Instala dependencias
     composer install
 
-#### 3. Crea el archivo de configuración
+#### 4. Crea el archivo de configuración
 Copia el archivo .env.example a .env:
 
     cp .env.example .env
 
-#### 4. Inicia Apache y MySQL en XAMPP
+#### 5. Inicia Apache y MySQL en XAMPP
 Abre el panel de control de XAMPP y activa los servicios de **Apache** y **MySQL**.
 
-#### 5. Configura el archivo `.env` con los datos de conexión a MySQL
+#### 6. Configura el archivo `.env` con los datos de conexión a MySQL
 ```sql
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -48,14 +51,14 @@ DB_USERNAME=tu_usuario
 DB_PASSWORD=tu_contraseña
 ```
 
-#### 6. Genera la clave de la aplicación
+#### 7. Genera la clave de la aplicación
     php artisan key:generate
 
-#### 7. Migra las tablas a la base de datos
+#### 8. Migra las tablas a la base de datos
 Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
 
     php artisan migrate    
 Si la base de datos `soporte` no existe en MySQL, también se creará.
 
-#### 8. Inicia el servidor de desarrollo
+#### 9. Inicia el servidor de desarrollo
     php artisan serve
