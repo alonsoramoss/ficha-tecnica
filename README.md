@@ -17,7 +17,7 @@ Sistema desarrollado para automatizar y optimizar el registro, generación y ges
 
 Sección: **Ficha Técnica**
 
-- Registro de nuevas fichas técnicas.
+- Registro de ficha técnica.
 - Almacenamiento automático de la información en la base de datos.
 - Generación automática de un archivo PDF con los datos registrados.
 
