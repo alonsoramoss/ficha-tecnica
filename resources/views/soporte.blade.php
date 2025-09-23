@@ -1,14 +1,14 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('title', 'Ficha Técnica')
+@section("title", "Ficha Técnica")
 
-@section('content')
+@section("content")
     <div class="container">
-        <form class="p-4 p-sm-5 border shadow-lg" action="{{ route('guardar') }}" method="POST" id="formFicha">
+        <form class="p-4 p-sm-5 border shadow-lg" action="{{ route("guardar") }}" method="POST" id="formFicha">
         @csrf
             <div class="row mb-4">
                 <div class="col-12 col-md-4 d-flex justify-content-center">
-                    <img src="{{ asset('img/municipalidad-pisco.png') }}"
+                    <img src="{{ asset("img/municipalidad-pisco.png") }}"
                     class="img-fluid mb-4 mb-sm-5" style="width: 19rem;" alt="Municipalidad de Pisco">
                 </div>
                 <div class="col-12 col-md-8">
@@ -323,8 +323,6 @@
     </div>
 @endsection
 
-@push('scripts')
-    <script src="{{ asset('js/dni.js') }}" defer></script>
-    <script src="{{ asset('js/checkbox.js') }}" defer></script>
-    <script src="{{ asset('js/reset.js') }}" defer></script>
+@push("scripts")
+    @vite("resources/js/pages/soporte.js")
 @endpush
