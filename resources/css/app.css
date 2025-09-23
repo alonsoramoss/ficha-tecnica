@@ -1,0 +1,100 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat.woff2') format('woff2');
+    font-display: swap;
+}
+
+*::selection {
+    color: #000;
+    background-color: #67c2ff
+}
+
+*::-moz-selection {
+    color: #000;
+    background-color: #67c2ff
+}
+
+body {
+    font-family: "Montserrat", system-ui, sans-serif;
+}
+
+@layer base{
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #fff;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #000; 
+        border-radius: 10px;
+        border: 2px solid #fff;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #303030;
+    }
+
+    * {
+        scrollbar-color: #000 #fff;
+        scrollbar-width: thin;
+    }
+}
+
+.img-navbar {
+    width: 100%;
+    max-width: 13rem;
+    height: auto;
+}
+
+.text-navbar, label, .text-ficha, .input-group-text {
+    font-size: 1rem;
+}
+
+.text-navbar {
+    transition: text-decoration-color 0.2s ease;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+th, td {
+    font-size: 0.875rem;
+}
+
+@media (max-width: 576px) {
+    .img-navbar {
+        max-width: 9rem;
+    }
+
+    .text-navbar, td {
+        font-size: 0.75rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    label, .text-ficha, .input-group-text {
+        font-size: 0.875rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+}
