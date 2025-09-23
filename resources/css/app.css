@@ -1,8 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat.woff2') format('woff2');
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.woff2") format("woff2");
     font-display: swap;
 }
 
