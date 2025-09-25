@@ -14,10 +14,10 @@
                 <div class="col-12 col-md-8">
                     <label for="nomFicha" class="form-label fw-semibold">FICHA TÉCNICA</label>
                     <select class="form-select" name="nomFicha" id="nomFicha" required>
-                        <option disabled selected>Seleccione una opción</option>
+                        <option value="" selected disabled>Seleccione una ficha técnica</option>
                         <option value="SOPORTE TÉCNICO">SOPORTE TÉCNICO</option>
                         <option value="MANTENIMIENTO / SOPORTE TÉCNICO">MANTENIMIENTO / SOPORTE TÉCNICO</option>
-                        <option value="INSTALACION DE EQUIPO DE COMPUTO Y/O PERIFÉRICO">INSTALACIÓN DE EQUIPO DE CÓMPUTO Y/O PERIFÉRICO</option>
+                        <option value="INSTALACIÓN DE EQUIPO DE CÓMPUTO Y/O PERIFÉRICO">INSTALACIÓN DE EQUIPO DE CÓMPUTO Y/O PERIFÉRICO</option>
                         <option value="BAJA DE EQUIPO Y/O SOPORTE TÉCNICO">BAJA DE EQUIPO Y/O SOPORTE TÉCNICO</option>
                     </select>
                 </div>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col">
                     <label for="fecha" class="form-label fw-semibold">FECHA</label>
-                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    <input type="date" class="form-control" id="fecha" name="fecha" required max="{{ date('Y-m-d') }}">
                 </div>
             </div>
             <div class="mb-3">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col">
                     <label for="dni" class="form-label fw-semibold">DNI</label>
-                    <input type="number" class="form-control" id="dni" name="dni" required>
+                    <input type="text" class="form-control" id="dni" name="dni" required inputmode="numeric">
                 </div>
             </div>
             <div class="mb-3">
