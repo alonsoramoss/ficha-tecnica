@@ -33,23 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.querySelectorAll("a[href]").forEach(link => {
-        link.addEventListener("click", function (e) {
-            if (!link.href.startsWith(location.origin) || link.target === "_blank") return;
-            if (formModificado()) {
-                const confirmarSalir = confirm("Hay datos ingresados que se perderán si abandonas esta página. ¿Deseas continuar?");
-                if (!confirmarSalir) e.preventDefault();
-            }
-        });
-    });
-
-    window.addEventListener("popstate", function () {
-        if (formModificado()) {
-            const confirmarSalir = confirm("Hay datos ingresados que se perderán si abandonas esta página. ¿Deseas continuar?");
-            if (!confirmarSalir) history.pushState(null, document.title, location.href);
-        }
-    });
-
     form.addEventListener("submit", function () {
         setTimeout(() => {
             guardarEstadoInicial();
