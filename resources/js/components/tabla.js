@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const successMessage = document.getElementById("alerta-datos");
-    if (successMessage) {
+    const mensajeExito = document.getElementById("alerta-datos");
+    if (mensajeExito) {
         setTimeout(() => {
-            successMessage.style.display = "none";
+            mensajeExito.style.display = "none";
         }, 5000);
     }
 
-    const searchInput = document.getElementById("buscar");
-    const searchForm = document.getElementById("form-buscar");
+    const entradaBusqueda = document.getElementById("buscar");
+    const formBusqueda = document.getElementById("form-buscar");
 
-    searchForm.addEventListener("submit", function(event) {
+    formBusqueda.addEventListener("submit", function(event) {
         event.preventDefault();
     });
 
@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    searchInput.addEventListener("keyup", function() {
-        const searchTerm = searchInput.value;
-        const url = `/datos/buscar?buscar=${encodeURIComponent(searchTerm)}`;
+    entradaBusqueda.addEventListener("keyup", function() {
+        const textoBusqueda = entradaBusqueda.value;
+        const url = `/datos/buscar?buscar=${encodeURIComponent(textoBusqueda)}`;
         actualizarTabla(url);
     });
 
@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (link) {
             event.preventDefault();
             const urlBase = link.href;
-            const searchTerm = searchInput.value;
-            const finalUrl = searchTerm ? `${urlBase}&buscar=${encodeURIComponent(searchTerm)}` : urlBase;
-            actualizarTabla(finalUrl);
+            const textoBusqueda = entradaBusqueda.value;
+            const urlFinal = textoBusqueda ? `${urlBase}&buscar=${encodeURIComponent(textoBusqueda)}` : urlBase;
+            actualizarTabla(urlFinal);
         }
     });
 });
