@@ -12,12 +12,12 @@
     @endif
     <form id="form-buscar">
         <div class="form-group">
-            <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
+            <input type="text" id="buscar" name="buscar" placeholder="Buscar..." class="form-control">
         </div>
     </form>
     
     <div class="table-container">
-        <table class="table table-bordered table-hover mt-3 align-middle" id="tabla-datos">
+        <table id="tabla-datos" class="table table-bordered table-hover mt-3 align-middle">
             <thead class="table-dark text-center align-middle">
                 <tr>
                     <th>#</th>
