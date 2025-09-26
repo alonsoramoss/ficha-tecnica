@@ -6,8 +6,8 @@
 @section("content")
     <div class="container">
         <h1>404</h1>
-        <h2>La página que estás buscando no existe</h2>
-        <p>Verifica la dirección o vuelve al inicio</p>
+        <h2>Página no encontrada</h2>
+        <p>Verifica la dirección URL o vuelve al inicio.</p>
         <button class="button" onclick="window.location.href='{{ url('/') }}'">Volver al inicio</button>
     </div>
 @endsection
