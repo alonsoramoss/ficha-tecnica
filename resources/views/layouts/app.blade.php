@@ -10,7 +10,7 @@
         @stack("styles")
     </head>
     <body>
-        <nav class="navbar bg-body-tertiary border-bottom">
+        <nav class="navbar bg-body-tertiary border-bottom sticky-top">
             <div class="container-fluid mx-0 mx-sm-3">
                 <a href="/" class="navbar-brand">
                     <img src="{{ asset("img/municipalidad-pisco.png") }}" alt="Municipalidad de Pisco" class="img-navbar">
