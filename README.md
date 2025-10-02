@@ -8,9 +8,10 @@ Sistema desarrollado para automatizar y optimizar el registro, generación y ges
 
 - ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 - ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-- ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-- ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 - ![Composer](https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 - ![XAMPP](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)
 
 ## 📋 Funcionalidades
@@ -43,8 +44,16 @@ cd ficha-tecnica
 
 #### 3. Instala dependencias
 
+- Dependencias de PHP (usando Composer)
+
 ```bash
 composer install
+```
+
+- Dependencias de Node.js (usando PNPM)
+
+```bash
+pnpm install
 ```
 
 #### 4. Crea el archivo de configuración
@@ -85,8 +94,25 @@ php artisan migrate
 
 Si la base de datos `soporte` no existe en MySQL, también se creará.
 
-#### 9. Inicia el servidor de desarrollo
+#### 9. Ejecución del proyecto
+
+- Inicia el backend (Laravel)
 
 ```bash
 php artisan serve
 ```
+
+Esto iniciará el servidor en:
+
+http://127.0.0.1:8000
+
+- Inicia el frontend (Vite con PNPM)
+
+En otra terminal, ejecuta:
+
+```bash
+pnpm run dev
+```
+
+Esto habilitará Hot Module Replacement (HMR) para recargar automáticamente los cambios en CSS y JS.
+
