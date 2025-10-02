@@ -102,11 +102,9 @@ Si la base de datos `soporte` no existe en MySQL, también se creará.
 php artisan serve
 ```
 
-Esto iniciará el servidor en:
+Esto iniciará el servidor en: http://127.0.0.1:8000
 
-http://127.0.0.1:8000
-
-- Inicia el frontend (Vite con PNPM)
+- Inicia el frontend (Vite)
 
 En otra terminal, ejecuta:
 
@@ -115,4 +113,3 @@ pnpm run dev
 ```
 
 Esto habilitará Hot Module Replacement (HMR) para recargar automáticamente los cambios en CSS y JS.
-
