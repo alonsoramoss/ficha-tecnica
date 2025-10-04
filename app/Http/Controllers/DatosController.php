@@ -78,14 +78,14 @@ class DatosController extends Controller
 
         $data = $request->all();
 
-        $data["hardware"] = isset($data["hardware"]) ? explode(",", $data["hardware"]) : [];
-        $data["hardware_text"] = isset($data["hardware_text"]) ? explode(",", $data["hardware_text"]) : [];
-        $data["sistemas"] = isset($data["sistemas"]) ? explode(",", $data["sistemas"]) : [];
-        $data["sistemas_text"] = isset($data["sistemas_text"]) ? explode(",", $data["sistemas_text"]) : [];
-        $data["software"] = isset($data["software"]) ? explode(",", $data["software"]) : [];
-        $data["software_text"] = isset($data["software_text"]) ? explode(",", $data["software_text"]) : [];
-        $data["redes"] = isset($data["redes"]) ? explode(",", $data["redes"]) : [];
-        $data["redes_text"] = isset($data["redes_text"]) ? explode(",", $data["redes_text"]) : [];
+        $data["hardware"] = $request->input("hardware", []);
+        $data["hardware_text"] = $request->input("hardware_text", []);
+        $data["sistemas"] = $request->input("sistemas", []);
+        $data["sistemas_text"] = $request->input("sistemas_text", []);
+        $data["software"] = $request->input("software", []);
+        $data["software_text"] = $request->input("software_text", []);
+        $data["redes"] = $request->input("redes", []);
+        $data["redes_text"] = $request->input("redes_text", []);
 
         $dato = SoporteModel::findOrFail($id);
         $dato->update($data);
